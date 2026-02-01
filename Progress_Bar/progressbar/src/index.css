@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* headline, container as before */
+.headline {
+  @apply text-lg text-center text-indigo-950 font-bold mb-5;
+}
+.progress-container {
+  @apply flex flex-col items-center mt-5;
+}
+
+/* outer must be relative to position the overlay */
+.outer {
+  @apply w-[400px] border border-gray-400 rounded-lg mb-5 relative overflow-hidden h-7;
+}
+
+/* inner: color + height + width transition */
+.inner {
+  @apply bg-green-600 h-full transition-transform duration-500 ease-in;
+}
+
+/* overlay label always centered inside outer */
+.progress-text {
+  @apply absolute inset-0 flex items-center justify-center text-sm font-semibold z-10 pointer-events-none;
+}

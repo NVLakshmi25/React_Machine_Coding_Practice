@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+ 
+.header {
+  @apply text-xl font-bold text-amber-700 text-center  mt-5;
+}
+.container{
+  @apply text-center pl-5  w-full  ;
+}
+.highlight{
+  @apply font-bold cursor-pointer ;
+}
+.icon{
+   @apply  w-[18px] h-[18px] cursor-pointer;
+}
+.main{
+  @apply mb-1 ;
+}
+.main_folder{
+  @apply flex items-center gap-2 ;
+}
+.main_file{
+  @apply pl-6 mt-1 ;
+}
+

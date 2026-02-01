@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+
+.chip-container{
+    @apply min-h-screen flex flex-col items-center justify-center gap-3
+}
+
+.chip-header {
+    @apply text-3xl font-bold text-gray-800  text-center tracking-wide
+    
+  }
+   .chip-input {
+    @apply w-80 px-4 py-3 rounded-xl border border-gray-300 
+           focus:outline-none focus:ring-2 focus:ring-indigo-500 
+           focus:border-indigo-500 
+          
+  }
+.chip-input::placeholder {
+  @apply text-gray-500;
+}
+
+  .chipinput-visible {
+  @apply flex items-center gap-2
+         px-4 py-2
+         bg-indigo-100 text-indigo-800
+         rounded-full
+         shadow-sm
+         text-sm font-medium;
+}
+
+  .chip-remove {
+  @apply w-5 h-5 
+         flex items-center justify-center
+         rounded-full
+         bg-red-500 text-white
+         text-xs font-bold
+         hover:bg-red-600
+         transition
+         cursor-pointer;
+}

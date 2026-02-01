@@ -1,0 +1,1 @@
+<button className= {"page-number" + (n===currentPage ? "active" : "" )}>  //  this is one type of method  and the other one is using  template  literals  to show the change of active color button 

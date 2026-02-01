@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+/* ---------- API RESULT BOX ---------- */
+
+.api-box {
+  @apply bg-white p-4 rounded-lg shadow-md text-sm overflow-auto;
+}
+
+/* ---------- ERROR ---------- */
+
+.api-error {
+  @apply text-red-600 font-medium  text-xl ;
+} 
+
+/* ---------- LOADING ---------- */
+
+.api-loading {
+  @apply text-gray-600 font-medium text-xl;
+}
+
+
+
+

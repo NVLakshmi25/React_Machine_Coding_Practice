@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+/* layout */
+.otp-container {
+  @apply min-h-screen flex flex-col items-center justify-center;
+}
+
+.head {
+  @apply text-2xl font-bold mb-6;
+}
+
+.otp-generator {
+  @apply flex justify-center gap-3;
+}
+
+.otp-input {
+  @apply w-[52px] h-[52px] text-xl text-center border border-gray-400 rounded-md
+         focus:outline-none focus:ring-2 focus:ring-indigo-500;
+}
+
+.resend-btn {
+  @apply text-indigo-600 font-semibold underline;
+}
+
+/* shake animation */
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.modal-overlay {
+  @apply fixed inset-0 bg-black/40 flex items-center justify-center z-50;
+}
+
+.modal-box {
+  @apply bg-white p-6 rounded-xl shadow-xl w-[320px] text-center;
+  animation: scaleIn 0.25s ease-out forwards;
+}
+
+.modal-btn {
+  @apply mt-6 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700;
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.25s ease-out forwards;
+}
+
+
+
+

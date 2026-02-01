@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+.accordion-container {
+  @apply max-w-xl mx-auto mt-10 space-y-4;
+}
+
+.accordion-item {
+  @apply border border-gray-200 rounded-xl shadow-sm bg-white overflow-hidden;
+}
+
+.accordion-title {
+  @apply w-full flex items-center justify-between
+    px-5 py-4 text-left font-semibold text-gray-800
+    bg-gray-100 hover:bg-gray-200
+    transition-colors duration-200;
+}
+
+.accordion-icon {
+  @apply transition-transform duration-300 text-lg;
+}
+
+.accordion-content {
+  @apply px-5 py-4 text-gray-600 bg-white leading-relaxed;
+}
