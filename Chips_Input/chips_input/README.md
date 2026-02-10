@@ -1,4 +1,5 @@
-✅ 1) Project Architecture (Simple Technical English)
+✅ 1) Project Architecture 
+
 What is this project?
 
 This is a React Chips Input component where:
