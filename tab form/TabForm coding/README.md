@@ -1,3 +1,4 @@
+----------------------------------------------------------------------------------------------------------------------
 1️⃣ Functional Components ?
 A functional component is a JavaScript function that returns JSX to render UI.
 ✅ Syntax
