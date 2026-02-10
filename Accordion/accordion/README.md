@@ -1265,6 +1265,4 @@ Clicking again collapses it
 
 Icon rotates when expanded
 
-📜 License
-
-This project is open-source and free to use. 
+ 
