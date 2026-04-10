@@ -4,7 +4,7 @@ import ListObjects from './ListObjects' // 🧩 component to render tree recursi
 
 const File_FolderStructure = () => {
 
-    // 🌳 State to store full file/folder tree
+// 🌳 State to store full file/folder tree
     const [data, setData] = useState(json);
 
 
@@ -103,6 +103,7 @@ const File_FolderStructure = () => {
         </div>
     )
 }
+export default File_FolderStructure;
 ----------------------------------------------------------------------------------------------------------------------------------
 ⚙️ Key Concepts
 1. Tree Structure
@@ -147,4 +148,4 @@ Update node name using same recursion logic
 
 "This component implements a recursive tree structure to manage a file/folder system. It uses recursion to traverse and update nested nodes for operations like add and delete while maintaining immutability."
 
-export default File_FolderStructure;
+
