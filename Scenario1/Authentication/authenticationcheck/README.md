@@ -37,7 +37,7 @@ Potential Improvements
 
 Interview Notes
 
-Features
+1.  Features
 
 ✅ Authentication with JWT tokens
 
@@ -55,7 +55,7 @@ Features
 
 ✅ Clean, responsive UI with TailwindCSS
 
-Architecture
+2. Architecture
 App
  ├─ AuthProvider (Context)
  │    ├─ Stores accessToken in state
@@ -90,7 +90,7 @@ JavaScript ES6+ – Async/await, spread operators, arrow functions
 
 HTML5 – Basic DOM and semantic structure
 
-Core Concepts
+3.  Core Concepts
 Concept	Usage in Project
 React Context	Global auth state (AuthContext)
 useState	Store access token (undefined, null, string)
@@ -103,7 +103,8 @@ Conditional Rendering	Show Loading, Login, or Dashboard based on token
 TailwindCSS	Styling, spacing, responsive layout
 HTTP-only Cookie	Store refresh token safely on server
 _retry flag	Prevent infinite refresh loops
-How It Works
+
+4. How It Works
 
 On app load:
 
@@ -196,7 +197,7 @@ Short-lived access tokens → reduce exposure if compromised
 
 Silent refresh → smooth UX, prevents forced logout
 
-Running the Project
+5.  Running the Project
 
 Install dependencies:
 
@@ -229,7 +230,7 @@ Add Tailwind animations for loading and transitions
 
 Add unit tests for interceptors & context
 
-Interview Notes / Elevator Pitch
+6. Interview Notes / Elevator Pitch
 
 “This project demonstrates JWT authentication in React using Context and Axios interceptors.
 The AuthProvider stores a short-lived access token in memory and attaches it automatically to requests.
@@ -296,7 +297,7 @@ Spread operator ... → Immutable state updates
 
 Optional chaining ?. → Safe property access
 
-2. Code Explanation (Line by Line)
+7.  Code Explanation (Line by Line)
 AuthContext.js
 export const AuthContext = createContext(null);
 
